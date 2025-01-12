@@ -16,7 +16,7 @@ html, body {
     width: 100%;
     position: fixed;
     z-index: 999;
-    background-color: #0b0b0b;
+    background-color: #030303;
     padding: 25vh 10vw;
 }
 .line {
@@ -53,14 +53,49 @@ html, body {
     font-weight: 900;
 }
 .line h2 {
-    font-size: 6.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 900;
+    opacity: 0;
+    /* animation-name: anime; */
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    47%{
+        font-family: 'plain light';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: #fff;
+        opacity: 0;
+    }
+    50%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+    100%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+}
+
 /* #0b0b0b */
 #main {
     position: relative;
-    background-color: #111;
+    background-color: #030303;
 }
 
 #page1 {
